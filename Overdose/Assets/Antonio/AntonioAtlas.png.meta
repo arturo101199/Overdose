@@ -1,0 +1,271 @@
+fileFormatVersion: 2
+guid: 8b0471e9e9aa3394b9e8e769d4e0073c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8998794071417552576
+    second: AntonioAtlas_0
+  - first:
+      213: -1990682344681789972
+    second: AntonioAtlas_1
+  - first:
+      213: -6080396362643124010
+    second: AntonioAtlas_2
+  - first:
+      213: 289873800742359603
+    second: AntonioAtlas_3
+  - first:
+      213: 8093018703854088086
+    second: AntonioAtlas_4
+  - first:
+      213: -2217744291950623196
+    second: AntonioAtlas_5
+  - first:
+      213: 2109580163184205892
+    second: AntonioAtlas_6
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AntonioAtlas_0
+      rect:
+        serializedVersion: 2
+        x: 928.5142
+        y: 2693.9512
+        width: 595.80853
+        height: 633.4922
+      alignment: 9
+      pivot: {x: 0.49783927, y: 0.4981097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee84003d8006754db436fcba8994d4e
+      internalID: 8998794071417552576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_1
+      rect:
+        serializedVersion: 2
+        x: 423.96857
+        y: 1676.071
+        width: 225.82422
+        height: 683.166
+      alignment: 9
+      pivot: {x: 0.49635446, y: 0.49904263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051b1149113f45e41b33d618f8a60814
+      internalID: -1990682344681789972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_2
+      rect:
+        serializedVersion: 2
+        x: 928.2767
+        y: 1523.9668
+        width: 700.295
+        height: 1082.2695
+      alignment: 9
+      pivot: {x: 0.49816155, y: 0.4989822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5433266c4c6fba445b4642effe6e0f14
+      internalID: -6080396362643124010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_3
+      rect:
+        serializedVersion: 2
+        x: 1988.6163
+        y: 1676.5103
+        width: 383.41003
+        height: 619.78906
+      alignment: 9
+      pivot: {x: 0.49455363, y: 0.49854016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f9008a5e3d93342b8f4e6fe155afc3
+      internalID: 289873800742359603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_4
+      rect:
+        serializedVersion: 2
+        x: 423.94922
+        y: 317.83786
+        width: 338.87506
+        height: 897.27734
+      alignment: 9
+      pivot: {x: 0.49757057, y: 0.49891168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebfdd9680a841845a44115018c38c96
+      internalID: 8093018703854088086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_5
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 904
+        width: 410.77344
+        height: 446.7871
+      alignment: 9
+      pivot: {x: 0.49821013, y: 0.49800003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55eaee1413a1e4eb68ad95e98e7f4b
+      internalID: -2217744291950623196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AntonioAtlas_6
+      rect:
+        serializedVersion: 2
+        x: 1890.2635
+        y: 334.77332
+        width: 383.41003
+        height: 880.14844
+      alignment: 9
+      pivot: {x: 0.49805453, y: 0.499037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c0e66fffc4aa4408ac2297d5666f6f
+      internalID: 2109580163184205892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637085476292239210
+  assetBundleName: 
+  assetBundleVariant: 
