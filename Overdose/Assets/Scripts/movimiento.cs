@@ -19,9 +19,9 @@ public class movimiento : MonoBehaviour
     {
 
         float moverHorizontal = Input.GetAxisRaw ("Horizontal");
-        float moverVertical = Input.GetAxisRaw ("Vertical");
-        Vector2 movement = new Vector2 (moverHorizontal, moverVertical);
-        rb2d.AddForce (movement*speed);
+        // float moverVertical = Input.GetAxisRaw ("Vertical");
+        Vector2 movement = new Vector2(moverHorizontal * speed, 0);//moverVertical*speed);
+        rb2d.velocity= movement;
 
     }
 }	
