@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 59e1748dd1fa768459d8648613962a83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7083136097939444722
+    second: Cientifico Tox Atlas_0
+  - first:
+      213: -7042079686285498208
+    second: Cientifico Tox Atlas_3
+  - first:
+      213: -9107946941174768796
+    second: Cientifico Tox Atlas_4
+  - first:
+      213: -2023502430006006164
+    second: Cientifico Tox Atlas_5
+  - first:
+      213: 3473479461480532245
+    second: Cientifico Tox Atlas_6
+  - first:
+      213: -4832680347610965357
+    second: Cientifico Tox Atlas_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1217.0527
+        y: 2164.961
+        width: 695.547
+        height: 713.125
+      alignment: 9
+      pivot: {x: 0.5002498, y: 0.49716255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d734d1350cae44984c987f6b0b0331
+      internalID: -7083136097939444722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 91.97854
+        y: 1125.0724
+        width: 585.68365
+        height: 653.0664
+      alignment: 9
+      pivot: {x: 0.49945298, y: 0.4990727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0192baa08a6c19343ba66a7a5fb91549
+      internalID: -7042079686285498208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 1219.217
+        y: 1030.9941
+        width: 644.27747
+        height: 938.71106
+      alignment: 9
+      pivot: {x: 0.4986717, y: 0.35528076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aeb45ca8df6b984e935c290d218ae7a
+      internalID: -9107946941174768796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 2227.8772
+        y: 1351.3888
+        width: 597.40234
+        height: 603.26184
+      alignment: 9
+      pivot: {x: 0.49903187, y: 0.49830988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae32f039d146ca047a12b47cd3a0e7b3
+      internalID: -2023502430006006164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 755.00006
+        y: 112.40043
+        width: 367.42194
+        height: 957.75397
+      alignment: 9
+      pivot: {x: 0.49670416, y: 0.49866632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e9d548cb48a7b42ae6594ed2d1a8c1
+      internalID: 3473479461480532245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientifico Tox Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 2025.7032
+        y: 214.707
+        width: 508.047
+        height: 921.1328
+      alignment: 9
+      pivot: {x: 0.49857002, y: 0.49970326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f6e22fc8383084e822a55bdbe7983a
+      internalID: -4832680347610965357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637086325611929381
+  assetBundleName: 
+  assetBundleVariant: 
