@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -87,7 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -212,7 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Poses:
-  - {fileID: 11400000, guid: ec896265d7800f047aa54849fea69ba7, type: 2}
+  - {fileID: 0}
 --- !u!4 &52686604
 Transform:
   m_ObjectHideFlags: 0
@@ -280,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.1059964
+  m_Length: 1.1059948
   m_ChildTransform: {fileID: 203315667}
   m_AttachedIK: {fileID: 1852564787}
 --- !u!1 &203315666
@@ -371,15 +379,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 987700446}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.99954605, w: 0.030126976}
+      solverRotation: {x: 0, y: 0, z: -0.9850311, w: 0.17237665}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9904363, w: 0.13797058}
     - m_BoneTransform: {fileID: 637745721}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 1}
+      solverRotation: {x: 0, y: 0, z: 0.11222983, w: 0.99368227}
       defaultLocalRotation: {x: 0, y: 0, z: 0.013500284, w: 0.99990886}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: 0.8739451, y: -0.058368556, z: 0.025781216}
+    targetPosition: {x: 1.5833851, y: 0.30107147, z: 0.025781216}
     flip: 0
 --- !u!4 &245309786
 Transform:
@@ -452,6 +460,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -575,7 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.8193135
+  m_Length: 0.8193133
   m_ChildTransform: {fileID: 1279467566}
   m_AttachedIK: {fileID: 245309785}
 --- !u!1 &706963036
@@ -633,15 +642,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 2040265616}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.9995412, w: -0.030287206}
+      solverRotation: {x: 0, y: 0, z: 0.99767935, w: -0.06808759}
       defaultLocalRotation: {x: 0, y: 0, z: -0.99939144, w: 0.03488286}
     - m_BoneTransform: {fileID: 779520914}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.4076153, w: 0.91315377}
+      solverRotation: {x: 0, y: 0, z: -0.15536237, w: 0.9878575}
       defaultLocalRotation: {x: 0, y: 0, z: -0.09529538, w: 0.9954491}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -0.12605488, y: -2.1583686, z: 0.025781216}
+    targetPosition: {x: 0.55394506, y: -2.3683686, z: 0.025781216}
     flip: 1
 --- !u!1 &723788961
 GameObject:
@@ -700,6 +709,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -794,7 +804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.0959636
+  m_Length: 1.0959641
   m_ChildTransform: {fileID: 823687631}
   m_AttachedIK: {fileID: 706963038}
 --- !u!1 &823687630
@@ -923,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.1532826
+  m_Length: 1.1532828
   m_ChildTransform: {fileID: 637745721}
   m_AttachedIK: {fileID: 245309785}
 --- !u!1 &1111184076
@@ -971,7 +981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.3851783
+  m_Length: 1.3851779
   m_ChildTransform: {fileID: 169182533}
   m_AttachedIK: {fileID: 1852564787}
 --- !u!1 &1212656433
@@ -1019,7 +1029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.1337415
+  m_Length: 1.1337414
   m_ChildTransform: {fileID: 1590427461}
   m_AttachedIK: {fileID: 2105802283}
 --- !u!1 &1250363122
@@ -1079,6 +1089,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1232,6 +1243,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1319,9 +1331,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -1552,7 +1565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 0.3882239
+  m_Length: 0.38822392
   m_ChildTransform: {fileID: 22386119}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &1852564786
@@ -1596,15 +1609,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 1111184077}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.9956266, w: 0.09342148}
+      solverRotation: {x: 0, y: 0, z: 0.9669041, w: 0.25513998}
       defaultLocalRotation: {x: 0, y: 0, z: 0.9553821, w: 0.2953728}
     - m_BoneTransform: {fileID: 169182533}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0, w: 1}
+      solverRotation: {x: 0, y: 0, z: 0.21105029, w: 0.9774752}
       defaultLocalRotation: {x: 0, y: 0, z: 0.08986815, w: 0.9959537}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -1.1260549, y: -0.43836856, z: 0.025781216}
+    targetPosition: {x: -1.427455, y: -0.13836856, z: 0.025781216}
     flip: 0
 --- !u!4 &1852564788
 Transform:
@@ -1677,6 +1690,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1779,6 +1793,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1873,7 +1888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.2313248
+  m_Length: 1.231325
   m_ChildTransform: {fileID: 779520914}
   m_AttachedIK: {fileID: 706963038}
 --- !u!1 &2105802282
@@ -1917,15 +1932,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 1212656434}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.99713415, w: -0.07565408}
+      solverRotation: {x: 0, y: 0, z: -0.9968499, w: 0.079311624}
       defaultLocalRotation: {x: 0, y: 0, z: 0.9991525, w: 0.04116372}
     - m_BoneTransform: {fileID: 1590427461}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.5027717, w: 0.8644193}
+      solverRotation: {x: 0, y: 0, z: -0.13139461, w: 0.99133015}
       defaultLocalRotation: {x: 0, y: 0, z: -0.0395947, w: 0.99921584}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -1.1260549, y: -2.1583686, z: 0.025781216}
+    targetPosition: {x: -0.21605486, y: -2.5583687, z: 0.025781216}
     flip: 1
 --- !u!4 &2105802284
 Transform:
