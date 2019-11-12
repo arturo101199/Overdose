@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Animaci\xF3n Antonio.unity"
+- path: Assets/scenesOverdose.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
