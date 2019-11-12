@@ -23,14 +23,14 @@ public class movimiento : MonoBehaviour
 
         float moverHorizontal = Input.GetAxisRaw ("Horizontal");
         // float moverVertical = Input.GetAxisRaw ("Vertical");
-        Vector2 movement = new Vector2(moverHorizontal * speed, 0);//moverVertical*speed);
+        Vector2 movement = new Vector2(moverHorizontal * speed, rb2d.velocity.y);//moverVertical*speed);
         rb2d.velocity = movement;
         
-        Jump();
+        //Jump();
         
 
     }
-    void Jump() {
+    /*void Jump() {
         if (Input.GetKeyDown(KeyCode.Space)&& !isJumping)
         {
             isJumping = true; // variable para saber cuando saltar, la cosa es actualizar cuando haya colliders
@@ -41,5 +41,5 @@ public class movimiento : MonoBehaviour
 ;
         }
         else isJumping = false;
-    }
+    }*/
 }
