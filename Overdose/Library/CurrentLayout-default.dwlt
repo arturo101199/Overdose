@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 394}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 394}
+  m_MinSize: {x: 950, y: 544}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 683, y: 344}
-  m_MaxSize: {x: 12008, y: 8044}
+  m_MinSize: {x: 713, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 149
+  controlID: 84
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 750
     height: 635
-  m_MinSize: {x: 202, y: 344}
-  m_MaxSize: {x: 4002, y: 8044}
+  m_MinSize: {x: 232, y: 494}
+  m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 55
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,16 +189,16 @@ MonoBehaviour:
     y: 356
     width: 750
     height: 279
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 16}
+  m_MinSize: {x: 232, y: 272}
+  m_MaxSize: {x: 10002, y: 10022}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 3
+  m_LastSelected: 1
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -394,9 +394,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -19.07607, y: -1.0066053, z: -169.61328}
+    m_Target: {x: -1.7368385, y: 0.55386645, z: -172.76108}
     speed: 2
-    m_Value: {x: -19.07607, y: -1.0066053, z: -169.61328}
+    m_Value: {x: -1.5166737, y: 0.46938458, z: -172.67242}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -429,9 +429,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22.641272
+    m_Target: 20.594141
     speed: 2
-    m_Value: 21.666288
+    m_Value: 19.707312
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -567,7 +567,24 @@ MonoBehaviour:
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -41527160862929924, guid: d551f3fffc96f984bb59462ecb3ea97f, type: 2}
+    - {fileID: -1101155644493595584, guid: a4781168ea001d6408b292b6f817011e, type: 2}
     m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
     - e00: 1
       e01: 0
       e02: 0
@@ -631,23 +648,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e2bdffff
-      m_LastClickedID: -16926
-      m_ExpandedIDs: 5ab9fffffab9ffff2abaffff8cbaffffc0bafffffebbffff4cbdffffe2bdffff78beffffacbeffff06c9ffff98dcffffbafaffff66fbffffee3c0000163d0000223d00002a3d0000663d0000723d0000763d00007c3d0000823d0000883d00009c3d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8efafffffa3c0000223d00002e3d0000363d0000723d00007e3d0000883d0000943d0000a83d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 15702
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -696,20 +713,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Cientifico Tox/animaciones
+    - Assets/Antonio
   m_ViewMode: 1
   m_StartGridSize: 72
   m_LastFolders:
-  - Assets/Cientifico Tox/animaciones
+  - Assets/Antonio
   m_LastFoldersGridSize: 72
   m_LastProjectPath: C:\Users\mferr\Documents\GitHub\Overdose\Overdose
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: 043f0000
-    m_LastClickedID: 16132
-    m_ExpandedIDs: 00000000ae31000022380000d23d000000ca9a3b
+    scrollPos: {x: 0, y: 48}
+    m_SelectedIDs: a6380000
+    m_LastClickedID: 14502
+    m_ExpandedIDs: 00000000ae310000aa3200004c38000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -737,7 +754,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ae310000c837000022380000
+    m_ExpandedIDs: 00000000ae3100004c380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -762,8 +779,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 189effff
-    m_LastClickedInstanceID: -25064
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: fa340000163100003a320000
     m_RenameOverlay:
