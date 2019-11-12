@@ -175,11 +175,11 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 1101247519}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.98638207, w: 0.16447002}
+      solverRotation: {x: 0, y: 0, z: -0.9863822, w: 0.16446944}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9895119, w: 0.14445147}
     - m_BoneTransform: {fileID: 1922980829}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.171849, w: 0.9851233}
+      solverRotation: {x: 0, y: 0, z: -0.17184821, w: 0.98512346}
       defaultLocalRotation: {x: 0, y: 0, z: -0.13920836, w: 0.9902631}
     m_Weight: 1
     m_RestoreDefaultPose: 1
@@ -1269,6 +1269,7 @@ GameObject:
   - component: {fileID: 364117039}
   - component: {fileID: 364117037}
   - component: {fileID: 364117044}
+  - component: {fileID: 364117045}
   m_Layer: 0
   m_Name: Antonio
   m_TagString: Untagged
@@ -1418,7 +1419,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf63936ec656f14496638b6ac5b137d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 5
+  height: 5000
+--- !u!114 &364117045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364117036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e765e757219bf374cb397c8d9d517c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &394282224
 GameObject:
   m_ObjectHideFlags: 0
@@ -4554,7 +4567,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101247518}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9863821, w: 0.16447003}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9863822, w: 0.16446944}
   m_LocalPosition: {x: -0.71522266, y: -0.871812, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4575,7 +4588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.3499997
+  m_Length: 3.349999
   m_ChildTransform: {fileID: 1922980829}
   m_AttachedIK: {fileID: 74806962}
 --- !u!1 &1102009410
@@ -5880,7 +5893,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1617472979
 Animator:
   serializedVersion: 3
@@ -7451,7 +7464,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922980828}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17184901, w: 0.98512334}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17184821, w: 0.98512346}
   m_LocalPosition: {x: 3.3499997, y: -0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7472,7 +7485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.6663883
+  m_Length: 3.666384
   m_ChildTransform: {fileID: 1445076921}
   m_AttachedIK: {fileID: 74806962}
 --- !u!1 &1930705158
