@@ -86,7 +86,6 @@
     <Compile Include="Assets\Anima2D\Scripts\SpriteMesh.cs" />
     <Compile Include="Assets\Anima2D\Scripts\SpriteMeshAnimation.cs" />
     <Compile Include="Assets\Anima2D\Scripts\SpriteMeshInstance.cs" />
-    <Compile Include="Assets\animacion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -94,12 +93,13 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-    <Compile Include="Assets\enemypatrol.cs" />
-    <Compile Include="Assets\movement_pattern1.cs" />
-    <Compile Include="Assets\Pausa.cs" />
-    <Compile Include="Assets\salto.cs" />
+    <Compile Include="Assets\Scripts\animacion.cs" />
     <Compile Include="Assets\Scripts\camara.cs" />
+    <Compile Include="Assets\Scripts\enemypatrol.cs" />
+    <Compile Include="Assets\Scripts\movement_pattern1.cs" />
     <Compile Include="Assets\Scripts\movimiento.cs" />
+    <Compile Include="Assets\Scripts\Pausa.cs" />
+    <Compile Include="Assets\Scripts\salto.cs" />
     <None Include="Assets\Anima2D\Examples\Shaders\VisibleInsideMask.shader" />
     <None Include="Assets\Anima2D\Examples\Shaders\VisibleOutsideMask.shader" />
     <None Include="Assets\Anima2D\Version.txt" />
