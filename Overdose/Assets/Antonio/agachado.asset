@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0543fe805424df99fe08ce744cbe49, type: 3}
+  m_Name: agachado
+  m_EditorClassIdentifier: 
+  m_PoseEntries:
+  - path: Huesos/Cadera
+    localPosition: {x: 0.41, y: -5.06, z: -0.0007705688}
+    localRotation: {x: 0, y: 0, z: 0.6179213, w: 0.7862399}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso
+    localPosition: {x: 1.6600136, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.015227429, w: 0.99988407}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso/Cabeza
+    localPosition: {x: 4.9501343, y: 0.0000000032846401, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.034079716, w: 0.99941915}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso/Brazo Der
+    localPosition: {x: 3.160108, y: 2.5867898, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.97632843, w: -0.21629344}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso/Brazo Der/Antebrazo Der
+    localPosition: {x: 2.5910227, y: -0.00000071525574, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.54081297, w: 0.8411429}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso/Brazo Izq
+    localPosition: {x: 3.2594597, y: -1.4875851, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.9695804, w: -0.24477297}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Torso/Brazo Izq/Antebrazo Izq
+    localPosition: {x: 2.7500005, y: 0.00000035762787, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.7947954, w: 0.6068775}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Bata Trasera
+    localPosition: {x: -0.17389494, y: -0.40657705, z: -5.820766e-11}
+    localRotation: {x: 0, y: 0, z: -0.9863058, w: 0.16492715}
+    localScale: {x: 0.65, y: 1.48, z: 1}
+  - path: Huesos/Cadera/Bata Der
+    localPosition: {x: 0.3421686, y: 1.1447101, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9886281, w: 0.15038091}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Bata Izq
+    localPosition: {x: 0.78, y: -1.59, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.747375, w: 0.6644024}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Der
+    localPosition: {x: 0.21615162, y: 0.71493566, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.9948545, w: -0.10131439}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Der/Pierna Der
+    localPosition: {x: 3.3800018, y: 0.00000011920929, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7252792, w: 0.68845487}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Der/Pierna Der/Pie Der
+    localPosition: {x: 3.6400025, y: -0.0000005787697, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.24666072, w: 0.9691019}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Izq
+    localPosition: {x: 0.18683282, y: -0.741109, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.7217189, w: 0.6921863}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Izq/Pierna Izq
+    localPosition: {x: 3.6528344, y: 0.00000023841858, z: 0}
+    localRotation: {x: 0, y: 0, z: -0.889705, w: 0.45653585}
+    localScale: {x: 1, y: 1, z: 1}
+  - path: Huesos/Cadera/Muslo Izq/Pierna Izq/Pie Izq
+    localPosition: {x: 3.6099987, y: -0.00000008940697, z: 0}
+    localRotation: {x: 0, y: 0, z: 0.8395677, w: 0.5432551}
+    localScale: {x: 1, y: 1, z: 1}
