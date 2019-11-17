@@ -15,9 +15,13 @@ public class animacion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("saltando", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            animator.SetBool("saltando", false);
         }
         if(Input.GetAxisRaw("Horizontal") == 1)
         {
