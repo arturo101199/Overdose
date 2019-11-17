@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Pausa : MonoBehaviour
 {
-    bool pausado;
+    public static bool pausado;
     public GameObject pausa;
     // Start is called before the first frame update
     void Start()
