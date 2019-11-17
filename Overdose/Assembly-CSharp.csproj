@@ -96,6 +96,7 @@
     <Compile Include="Assets\Scripts\animacion.cs" />
     <Compile Include="Assets\Scripts\camara.cs" />
     <Compile Include="Assets\Scripts\enemypatrol.cs" />
+    <Compile Include="Assets\Scripts\Interaccion.cs" />
     <Compile Include="Assets\Scripts\movement_pattern1.cs" />
     <Compile Include="Assets\Scripts\movimiento.cs" />
     <Compile Include="Assets\Scripts\Pausa.cs" />
