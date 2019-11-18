@@ -6,7 +6,7 @@ public class movement_pattern1 : MonoBehaviour
 {
     Rigidbody2D enemyRigidBody2D;
     public int UnitsToMove = 5;
-    public float EnemySpeed = 500;
+    public float EnemySpeed = 10;
     public bool _isFacingRight;
     private float _startPos;
     private float _endPos;
