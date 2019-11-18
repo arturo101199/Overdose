@@ -20,7 +20,7 @@ public class salto : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 pos = new Vector2(rb2d.position.x, rb2d.position.y-2);
-        bool salto = Physics2D.OverlapCircle(pos,1000.0f,layer);
+        bool salto = Physics2D.OverlapCircle(pos,2f,layer);
 
         if (salto == true) Debug.Log("choca");
         else Debug.Log(Physics2D.OverlapCircle(pos,100.0f,layer));
