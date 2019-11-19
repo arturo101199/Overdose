@@ -12,10 +12,13 @@ public class AbrirPuerta : MonoBehaviour
 
     public CinemachineConfiner cameraConfiner;
     public GameObject transicion;
+    public AudioClip clip;
+
+    private AudioSource source;
     // Start is called before the first frame update
     void Start()
     {
-        
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class AbrirPuerta : MonoBehaviour
                     enTransicion = true;
                     transform.position = nuevaPosicion;
                     cameraConfiner.m_BoundingShape2D = nuevoCollider;
+                    source.PlayOneShot(clip);
                     Invoke("desactivarTransicion", 2);
                 }
             }
