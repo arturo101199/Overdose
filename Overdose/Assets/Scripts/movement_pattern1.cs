@@ -30,7 +30,7 @@ public class movement_pattern1 : MonoBehaviour
 
         if (_moveRight)
         {
-            enemyRigidBody2D.velocity+=(Vector2.right * EnemySpeed * Time.deltaTime);
+            enemyRigidBody2D.velocity=(Vector2.right * EnemySpeed * Time.deltaTime);
             if (!_isFacingRight)
                 Flip();
         }
@@ -40,7 +40,7 @@ public class movement_pattern1 : MonoBehaviour
 
         if (!_moveRight)
         {
-            enemyRigidBody2D.velocity+=(-Vector2.right * EnemySpeed * Time.deltaTime);
+            enemyRigidBody2D.velocity=(-Vector2.right * EnemySpeed * Time.deltaTime);
             if (_isFacingRight)
                 Flip();
         }
