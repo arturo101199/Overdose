@@ -5,5 +5,5 @@ using UnityEngine;
 public class Puerta : MonoBehaviour
 {
     public Transform destino;
-    public PolygonCollider2D cameraCollider;
+    public GameObject camera;
 }

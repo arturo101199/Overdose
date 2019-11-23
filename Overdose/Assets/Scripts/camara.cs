@@ -70,7 +70,7 @@ public class camara : MonoBehaviour
 
     void recuperarCamara()
     {
-        DOTween.To(() => cameraTransposer.m_ScreenY, x => cameraTransposer.m_ScreenY = x, 0.5f, tiempoRecuperacionCamara);
+        DOTween.To(() => cameraTransposer.m_ScreenY, x => cameraTransposer.m_ScreenY = x, 0.7f, tiempoRecuperacionCamara);
     }
 
 }

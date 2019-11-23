@@ -8,9 +8,10 @@ public class AbrirPuerta : MonoBehaviour
     bool enPuerta;
     bool enTransicion;
     Vector3 nuevaPosicion;
-    PolygonCollider2D nuevoCollider;
+    GameObject nuevaCamara;
 
     public CinemachineConfiner cameraConfiner;
+    public GameObject actualCamera;
     public GameObject transicion;
     public AudioClip clip;
 
@@ -32,10 +33,10 @@ public class AbrirPuerta : MonoBehaviour
                 {
                     transicion.SetActive(true);
                     enTransicion = true;
+                    MoverCamara();
                     transform.position = nuevaPosicion;
-                    cameraConfiner.m_BoundingShape2D = nuevoCollider;
                     source.PlayOneShot(clip);
-                    Invoke("desactivarTransicion", 2);
+                    Invoke("DesactivarTransicion", 2);
                 }
             }
             
@@ -48,7 +49,7 @@ public class AbrirPuerta : MonoBehaviour
         {
             enPuerta = true;
             nuevaPosicion = collision.gameObject.GetComponent<Puerta>().destino.position;
-            nuevoCollider = collision.gameObject.GetComponent<Puerta>().cameraCollider;
+            nuevaCamara = collision.gameObject.GetComponent<Puerta>().camera;
         }
     }
 
@@ -57,9 +58,16 @@ public class AbrirPuerta : MonoBehaviour
         enPuerta = false;
     }
 
-    void desactivarTransicion()
+    void DesactivarTransicion()
     {
         transicion.SetActive(false);
         enTransicion = false;
     }
+
+    void MoverCamara()
+    {
+        actualCamera.SetActive(false);
+        nuevaCamara.SetActive(true);
+        actualCamera = nuevaCamara;
+    } 
 }
