@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 8b0471e9e9aa3394b9e8e769d4e0073c
+guid: 061c9611563a766438a8c4037bb0f12c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8998794071417552576
-    second: AntonioAtlas_0
+      213: -2887991801723596691
+    second: AntonioAtlas2_1
   - first:
-      213: -1990682344681789972
-    second: AntonioAtlas_1
+      213: 7283986788348793200
+    second: AntonioAtlas2_3
   - first:
-      213: -6080396362643124010
-    second: AntonioAtlas_2
+      213: 6974371613355168797
+    second: AntonioAtlas2_6
   - first:
-      213: 289873800742359603
-    second: AntonioAtlas_3
+      213: 3096454080118170525
+    second: AntonioAtlas2_7
   - first:
-      213: 8093018703854088086
-    second: AntonioAtlas_4
+      213: 5891084321152947069
+    second: AntonioAtlas2_10
   - first:
-      213: -2217744291950623196
-    second: AntonioAtlas_5
-  - first:
-      213: 2109580163184205892
-    second: AntonioAtlas_6
+      213: 1168581446815659309
+    second: AntonioAtlas2_12
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,148 +104,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AntonioAtlas_0
+      name: AntonioAtlas2_1
       rect:
         serializedVersion: 2
-        x: 928.5142
-        y: 2693.9512
-        width: 595.80853
-        height: 633.4922
+        x: 1370.3434
+        y: 2725.4014
+        width: 633.49207
+        height: 624.92773
       alignment: 9
-      pivot: {x: 0.49783927, y: 0.4981097}
+      pivot: {x: 0.497776, y: 0.49781498}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ee84003d8006754db436fcba8994d4e
-      internalID: 8998794071417552576
+      spriteID: 069f33d8182a1d8449aceadbcde1d928
+      internalID: -2887991801723596691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AntonioAtlas_1
+      name: AntonioAtlas2_3
       rect:
         serializedVersion: 2
-        x: 422.3867
-        y: 1674.3657
-        width: 229.25003
-        height: 686.5918
+        x: 84.79411
+        y: 1736.7418
+        width: 229.25002
+        height: 684.8788
       alignment: 9
-      pivot: {x: 0.49583742, y: 0.49903637}
+      pivot: {x: 0.4982647, y: 0.5004651}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 051b1149113f45e41b33d618f8a60814
-      internalID: -1990682344681789972
+      spriteID: a64248afa11686e44bd18b900dcbc40b
+      internalID: 7283986788348793200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AntonioAtlas_2
+      name: AntonioAtlas2_6
       rect:
         serializedVersion: 2
-        x: 928.2767
-        y: 1523.9668
-        width: 700.295
-        height: 1082.2695
+        x: 1370.4897
+        y: 1562.9071
+        width: 486.18347
+        height: 1032.5958
       alignment: 9
-      pivot: {x: 0.49816155, y: 0.4989822}
+      pivot: {x: 0.4971019, y: 0.49931723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5433266c4c6fba445b4642effe6e0f14
-      internalID: -6080396362643124010
+      spriteID: 0520d753a6357c3408a99ebedbe0459e
+      internalID: 6974371613355168797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AntonioAtlas_3
+      name: AntonioAtlas2_7
       rect:
         serializedVersion: 2
-        x: 1988.6163
-        y: 1676.5103
-        width: 383.41003
-        height: 619.78906
+        x: 2074.8618
+        y: 1740.9414
+        width: 383.41016
+        height: 621.5022
       alignment: 9
-      pivot: {x: 0.49455363, y: 0.49854016}
+      pivot: {x: 0.4991544, y: 0.49888578}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27f9008a5e3d93342b8f4e6fe155afc3
-      internalID: 289873800742359603
+      spriteID: 45c029a5e8a9bbd41ae5d91c3355f603
+      internalID: 3096454080118170525
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AntonioAtlas_4
+      name: AntonioAtlas2_10
       rect:
         serializedVersion: 2
-        x: 423.94922
-        y: 317.83786
-        width: 338.87506
-        height: 897.27734
+        x: 1462.0746
+        y: 441.9937
+        width: 340.58777
+        height: 898.9903
       alignment: 9
-      pivot: {x: 0.49757057, y: 0.49891168}
+      pivot: {x: 0.49796298, y: 0.50001234}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ebfdd9680a841845a44115018c38c96
-      internalID: 8093018703854088086
+      spriteID: 0d208ee05f4f25d499413e36cf0cf400
+      internalID: 5891084321152947069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AntonioAtlas_5
+      name: AntonioAtlas2_12
       rect:
         serializedVersion: 2
-        x: 1212
-        y: 904
-        width: 410.77344
-        height: 446.7871
+        x: 2044.2444
+        y: 457.62457
+        width: 386.83594
+        height: 883.57416
       alignment: 9
-      pivot: {x: 0.49821013, y: 0.49800003}
+      pivot: {x: 0.49373615, y: 0.49953404}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc55eaee1413a1e4eb68ad95e98e7f4b
-      internalID: -2217744291950623196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AntonioAtlas_6
-      rect:
-        serializedVersion: 2
-        x: 1890.2635
-        y: 334.77332
-        width: 383.41003
-        height: 880.14844
-      alignment: 9
-      pivot: {x: 0.49805453, y: 0.499037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96c0e66fffc4aa4408ac2297d5666f6f
-      internalID: 2109580163184205892
+      spriteID: 075ce521e0fa4d64f863cdc9f0cc7618
+      internalID: 1168581446815659309
       vertices: []
       indices: 
       edges: []
@@ -266,6 +242,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
-  userData: 637101219361756946
+  userData: 637102026665829422
   assetBundleName: 
   assetBundleVariant: 
