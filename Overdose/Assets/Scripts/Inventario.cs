@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Inventario : MonoBehaviour
 {
-    [SerializeField]
-    List<string> inventario;
+    public List<string> inventario;
     
 
     void OnTriggerStay2D(Collider2D collision)

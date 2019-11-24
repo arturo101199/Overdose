@@ -1558,6 +1558,7 @@ MonoBehaviour:
   camera: {fileID: 1485894558}
   abierta: 0
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: LlaveAscensor
 --- !u!61 &162113621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3172,7 +3173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6141ee10360300a48975b5833edc8a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraConfiner: {fileID: 1892321161}
+  inventario: {fileID: 364117048}
   actualCamera: {fileID: 1892321160}
   transicion: {fileID: 1765882616}
   clip: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
@@ -4914,6 +4915,7 @@ MonoBehaviour:
   camera: {fileID: 349299965}
   abierta: 1
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &619513538
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7872,6 +7874,7 @@ MonoBehaviour:
   camera: {fileID: 1892321160}
   abierta: 1
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &968373707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10250,6 +10253,7 @@ MonoBehaviour:
   camera: {fileID: 1463268039}
   abierta: 1
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1204877544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10340,6 +10344,7 @@ MonoBehaviour:
   camera: {fileID: 2062172310}
   abierta: 1
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1205131148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11948,6 +11953,7 @@ MonoBehaviour:
   camera: {fileID: 1892321160}
   abierta: 1
   puertaQueAbre: {fileID: 1848084251}
+  objetoParaAbrirla: 
 --- !u!61 &1369839812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12619,6 +12625,7 @@ MonoBehaviour:
   camera: {fileID: 0}
   abierta: 0
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1470546210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14174,6 +14181,7 @@ MonoBehaviour:
   camera: {fileID: 2062172310}
   abierta: 0
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1655981327
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14595,7 +14603,7 @@ GameObject:
   - component: {fileID: 1698831048}
   - component: {fileID: 1698831047}
   m_Layer: 0
-  m_Name: Terminal
+  m_Name: LlaveAscensor
   m_TagString: Objeto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14613,7 +14621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa24b5384b8e9f45b10f1e53b260e45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objeto: Llave
+  objeto: LlaveAscensor
 --- !u!61 &1698831048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15806,6 +15814,7 @@ MonoBehaviour:
   camera: {fileID: 1892321160}
   abierta: 1
   puertaQueAbre: {fileID: 1655981326}
+  objetoParaAbrirla: 
 --- !u!61 &1772376517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16308,6 +16317,7 @@ MonoBehaviour:
   camera: {fileID: 165224980}
   abierta: 0
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1848084252
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17076,6 +17086,7 @@ MonoBehaviour:
   camera: {fileID: 1892321160}
   abierta: 1
   puertaQueAbre: {fileID: 0}
+  objetoParaAbrirla: 
 --- !u!61 &1944476918
 BoxCollider2D:
   m_ObjectHideFlags: 0

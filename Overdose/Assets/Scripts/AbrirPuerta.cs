@@ -7,13 +7,19 @@ public class AbrirPuerta : MonoBehaviour
 {
     bool enPuerta;
     bool enTransicion;
+    bool abierta;
+
     Vector3 nuevaPosicion;
     GameObject nuevaCamara;
     Puerta puertaQueAbre;
+    Puerta puertaActual;
+    string objetoParaAbrirla;
 
-    public CinemachineConfiner cameraConfiner;
+    public Inventario inventario;
+
     public GameObject actualCamera;
     public GameObject transicion;
+
     public AudioClip clip;
 
     private AudioSource source;
@@ -29,14 +35,50 @@ public class AbrirPuerta : MonoBehaviour
         ComprobarPuerta();
     }
 
+    void ComprobarPuerta()
+    {
+        if (Input.GetKeyDown("e"))
+        {
+            if (!Pausa.pausado)
+            {
+                if (enPuerta && !enTransicion && puertaActual.abierta)
+                {
+                    Abrir();
+                }
+                else if (enPuerta && !enTransicion && !puertaActual.abierta)
+                {
+                    if (inventario.inventario.Contains(puertaActual.objetoParaAbrirla))
+                    {
+                        Abrir();
+                        inventario.inventario.Remove(puertaActual.objetoParaAbrirla);
+                        puertaActual.abierta = true;
+                    }
+                }
+            }
+
+        }
+    }
+
+    void Abrir()
+    {
+        transicion.SetActive(true);
+        enTransicion = true;
+        MoverCamara();
+        transform.position = puertaActual.destino.position;
+        if (puertaActual.puertaQueAbre != null)
+        {
+            puertaActual.puertaQueAbre.abierta = true;
+        }
+        source.PlayOneShot(clip);
+        Invoke("DesactivarTransicion", 2);
+    }
+
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Puerta"))
         {
-            enPuerta = collision.gameObject.GetComponent<Puerta>().abierta;
-            nuevaPosicion = collision.gameObject.GetComponent<Puerta>().destino.position;
-            nuevaCamara = collision.gameObject.GetComponent<Puerta>().camera;
-            puertaQueAbre = collision.gameObject.GetComponent<Puerta>().puertaQueAbre;
+            enPuerta = true;
+            puertaActual = collision.gameObject.GetComponent<Puerta>();
         }
     }
 
@@ -54,31 +96,9 @@ public class AbrirPuerta : MonoBehaviour
     void MoverCamara()
     {
         actualCamera.SetActive(false);
-        nuevaCamara.SetActive(true);
-        actualCamera = nuevaCamara;
+        puertaActual.camera.SetActive(true);
+        actualCamera = puertaActual.camera;
     }
 
-    void ComprobarPuerta()
-    {
-        if (Input.GetKeyDown("e"))
-        {
-            if (!Pausa.pausado)
-            {
-                if (enPuerta && !enTransicion)
-                {
-                    transicion.SetActive(true);
-                    enTransicion = true;
-                    MoverCamara();
-                    transform.position = nuevaPosicion;
-                    if (puertaQueAbre != null)
-                    {
-                        puertaQueAbre.abierta = true;
-                    }
-                    source.PlayOneShot(clip);
-                    Invoke("DesactivarTransicion", 2);
-                }
-            }
-
-        }
-    }
+    
 }
