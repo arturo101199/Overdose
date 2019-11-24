@@ -3144,6 +3144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf63936ec656f14496638b6ac5b137d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  salto_: 0
   height: 300
   layer:
     serializedVersion: 2
@@ -3161,6 +3162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8af2116b46a5344b94ab4350135db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  salto: {fileID: 364117044}
 --- !u!114 &364117046
 MonoBehaviour:
   m_ObjectHideFlags: 0
