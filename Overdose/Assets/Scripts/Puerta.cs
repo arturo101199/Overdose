@@ -6,4 +6,6 @@ public class Puerta : MonoBehaviour
 {
     public Transform destino;
     public GameObject camera;
+    public bool abierta;
+    public Puerta puertaQueAbre;
 }

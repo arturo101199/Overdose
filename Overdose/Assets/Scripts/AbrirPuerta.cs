@@ -9,6 +9,7 @@ public class AbrirPuerta : MonoBehaviour
     bool enTransicion;
     Vector3 nuevaPosicion;
     GameObject nuevaCamara;
+    Puerta puertaQueAbre;
 
     public CinemachineConfiner cameraConfiner;
     public GameObject actualCamera;
@@ -25,31 +26,17 @@ public class AbrirPuerta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e"))
-        {
-            if (!Pausa.pausado)
-            {
-                if (enPuerta && !enTransicion)
-                {
-                    transicion.SetActive(true);
-                    enTransicion = true;
-                    MoverCamara();
-                    transform.position = nuevaPosicion;
-                    source.PlayOneShot(clip);
-                    Invoke("DesactivarTransicion", 2);
-                }
-            }
-            
-        }
+        ComprobarPuerta();
     }
 
     void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Puerta"))
         {
-            enPuerta = true;
+            enPuerta = collision.gameObject.GetComponent<Puerta>().abierta;
             nuevaPosicion = collision.gameObject.GetComponent<Puerta>().destino.position;
             nuevaCamara = collision.gameObject.GetComponent<Puerta>().camera;
+            puertaQueAbre = collision.gameObject.GetComponent<Puerta>().puertaQueAbre;
         }
     }
 
@@ -69,5 +56,29 @@ public class AbrirPuerta : MonoBehaviour
         actualCamera.SetActive(false);
         nuevaCamara.SetActive(true);
         actualCamera = nuevaCamara;
-    } 
+    }
+
+    void ComprobarPuerta()
+    {
+        if (Input.GetKeyDown("e"))
+        {
+            if (!Pausa.pausado)
+            {
+                if (enPuerta && !enTransicion)
+                {
+                    transicion.SetActive(true);
+                    enTransicion = true;
+                    MoverCamara();
+                    transform.position = nuevaPosicion;
+                    if (puertaQueAbre != null)
+                    {
+                        puertaQueAbre.abierta = true;
+                    }
+                    source.PlayOneShot(clip);
+                    Invoke("DesactivarTransicion", 2);
+                }
+            }
+
+        }
+    }
 }
