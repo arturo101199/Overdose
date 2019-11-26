@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Puerta
   - Objeto
-  - caja
   layers:
   - Default
   - TransparentFX

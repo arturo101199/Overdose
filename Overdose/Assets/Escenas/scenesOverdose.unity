@@ -317,11 +317,11 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 1101247519}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9863817, w: 0.16447225}
+      solverRotation: {x: 0, y: 0, z: -0.98638177, w: 0.16447179}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9895119, w: 0.14445147}
     - m_BoneTransform: {fileID: 1922980829}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.17185299, w: 0.9851226}
+      solverRotation: {x: 0, y: 0, z: -0.17185237, w: 0.98512274}
       defaultLocalRotation: {x: 0, y: 0, z: -0.13920836, w: 0.9902631}
     m_Weight: 1
     m_RestoreDefaultPose: 1
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.549998
+  m_Length: 2.5499978
   m_ChildTransform: {fileID: 31180606}
   m_AttachedIK: {fileID: 200237326}
 --- !u!1 &165224980
@@ -2083,12 +2083,9 @@ GameObject:
   m_Component:
   - component: {fileID: 264593428}
   - component: {fileID: 264593429}
-  - component: {fileID: 264593430}
-  - component: {fileID: 264593431}
-  - component: {fileID: 264593432}
   m_Layer: 0
   m_Name: Caja
-  m_TagString: caja
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264593427}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.77, y: -3.09, z: 333.48828}
+  m_LocalPosition: {x: 4.81, y: 26, z: 333.48828}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 949109256}
@@ -2156,79 +2153,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &264593430
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264593427}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.33, y: 2.65}
-    newSize: {x: 3.33, y: 2.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.33, y: 2.65}
-  m_EdgeRadius: 0
---- !u!50 &264593431
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264593427}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &264593432
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264593427}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.010978222, y: -0.020489693}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.33, y: 2.65}
-    newSize: {x: 3.33, y: 2.65}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.477393, y: 2.363152}
-  m_EdgeRadius: 0
 --- !u!1 &270571952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 4.1663227
+  m_Length: 4.166323
   m_ChildTransform: {fileID: 778124706}
   m_AttachedIK: {fileID: 1369454059}
 --- !u!1 &290662461
@@ -3071,7 +2995,6 @@ GameObject:
   - component: {fileID: 364117046}
   - component: {fileID: 364117047}
   - component: {fileID: 364117048}
-  - component: {fileID: 364117049}
   m_Layer: 0
   m_Name: Antonio
   m_TagString: Player
@@ -3365,20 +3288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventario: []
---- !u!114 &364117049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364117036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40bae45468933aa4f9960cfc60058e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trig: 0
-  pushSpeed: 5
 --- !u!1 &382383355
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,7 +4344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 4.166324
+  m_Length: 4.166323
   m_ChildTransform: {fileID: 1677474604}
   m_AttachedIK: {fileID: 1122068652}
 --- !u!1 &543316162
@@ -5122,7 +5031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638240621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.475092, y: -4.75, z: -10}
+  m_LocalPosition: {x: -3.4820156, y: -4.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1892321163}
@@ -5364,7 +5273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.2399999
+  m_Length: 1.2399998
   m_ChildTransform: {fileID: 2113860001}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &669292647
@@ -6130,7 +6039,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 743673411}
-  m_LocalRotation: {x: 0, y: 0, z: -0.986382, w: 0.16447075}
+  m_LocalRotation: {x: 0, y: 0, z: -0.986382, w: 0.1644705}
   m_LocalPosition: {x: -0.71522266, y: -0.871812, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6151,7 +6060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.3500001
+  m_Length: 3.349999
   m_ChildTransform: {fileID: 1231911773}
   m_AttachedIK: {fileID: 1204772403}
 --- !u!1 &743692379
@@ -6883,7 +6792,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 782556777}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17184925, w: 0.9851233}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17184812, w: 0.98512346}
   m_LocalPosition: {x: 3.3499997, y: -0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6904,7 +6813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.6663857
+  m_Length: 3.6663868
   m_ChildTransform: {fileID: 1747993536}
   m_AttachedIK: {fileID: 1401446748}
 --- !u!1 &783753138
@@ -7341,7 +7250,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866962738}
-  m_LocalRotation: {x: 0, y: 0, z: -0.98638225, w: 0.16446933}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9863823, w: 0.16446874}
   m_LocalPosition: {x: -0.71522266, y: -0.871812, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7362,7 +7271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.3499994
+  m_Length: 3.3499987
   m_ChildTransform: {fileID: 782556778}
   m_AttachedIK: {fileID: 1401446748}
 --- !u!1 &902858933
@@ -9371,7 +9280,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101247518}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9863817, w: 0.16447225}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9863818, w: 0.1644718}
   m_LocalPosition: {x: -0.71522266, y: -0.871812, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9392,7 +9301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.3500009
+  m_Length: 3.35
   m_ChildTransform: {fileID: 1922980829}
   m_AttachedIK: {fileID: 74806962}
 --- !u!1 &1102009410
@@ -10302,11 +10211,11 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 743673412}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.98638195, w: 0.16447073}
+      solverRotation: {x: 0, y: 0, z: -0.986382, w: 0.1644705}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9895119, w: 0.14445147}
     - m_BoneTransform: {fileID: 1231911773}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.17185228, w: 0.98512274}
+      solverRotation: {x: 0, y: 0, z: -0.1718515, w: 0.98512286}
       defaultLocalRotation: {x: 0, y: 0, z: -0.13920836, w: 0.9902631}
     m_Weight: 1
     m_RestoreDefaultPose: 1
@@ -10625,7 +10534,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231911772}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17185228, w: 0.98512274}
+  m_LocalRotation: {x: 0, y: 0, z: -0.1718515, w: 0.98512286}
   m_LocalPosition: {x: 3.3499997, y: -0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10646,7 +10555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.666389
+  m_Length: 3.6663864
   m_ChildTransform: {fileID: 749390605}
   m_AttachedIK: {fileID: 1204772403}
 --- !u!1 &1234977157
@@ -11324,7 +11233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 4.166324
+  m_Length: 4.166323
   m_ChildTransform: {fileID: 39276574}
   m_AttachedIK: {fileID: 1698286043}
 --- !u!1 &1298481728
@@ -12446,11 +12355,11 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 866962739}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9863822, w: 0.16446932}
+      solverRotation: {x: 0, y: 0, z: -0.9863823, w: 0.16446874}
       defaultLocalRotation: {x: 0, y: 0, z: -0.9895119, w: 0.14445147}
     - m_BoneTransform: {fileID: 782556778}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.17184925, w: 0.9851233}
+      solverRotation: {x: 0, y: 0, z: -0.17184812, w: 0.98512346}
       defaultLocalRotation: {x: 0, y: 0, z: -0.13920836, w: 0.9902631}
     m_Weight: 1
     m_RestoreDefaultPose: 1
@@ -13036,7 +12945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.2399988
+  m_Length: 1.2399987
   m_ChildTransform: {fileID: 401332461}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &1524909512
@@ -14615,7 +14524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.750002
+  m_Length: 2.7500014
   m_ChildTransform: {fileID: 1294383317}
   m_AttachedIK: {fileID: 1698286043}
 --- !u!1 &1698286042
@@ -15158,7 +15067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.5500002
+  m_Length: 2.5499997
   m_ChildTransform: {fileID: 102973062}
   m_AttachedIK: {fileID: 1075308333}
 --- !u!1 &1728138790
@@ -16193,7 +16102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.239999
+  m_Length: 1.2399989
   m_ChildTransform: {fileID: 420884473}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &1813062855
@@ -16601,7 +16510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892321160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.524908, y: 1.25, z: 0}
+  m_LocalPosition: {x: -2.5179844, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1794438001}
@@ -16995,7 +16904,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922980828}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17185299, w: 0.9851226}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17185237, w: 0.98512274}
   m_LocalPosition: {x: 3.3499997, y: -0.0000009536743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17016,7 +16925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 3.6663816
+  m_Length: 3.6663885
   m_ChildTransform: {fileID: 1445076921}
   m_AttachedIK: {fileID: 74806962}
 --- !u!1 &1930705158
