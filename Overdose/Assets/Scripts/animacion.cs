@@ -6,8 +6,11 @@ public class animacion : MonoBehaviour
 {
     Animator animator;
     bool derecha = true;
+    bool agachado = false;
+
     public salto salto;
-    // Start is called before the first frame update
+    public GameObject antonioPerfil;
+
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -31,10 +34,23 @@ public class animacion : MonoBehaviour
                 animator.SetBool("saltando", false);
             }
 
+            if (Input.GetKeyDown("s"))
+            {
+                if (salto.salto_)
+                    animator.SetBool("agacharse", true);
+            }
+            if (Input.GetKeyUp("s"))
+            {
+                if (salto.salto_)
+                    animator.SetBool("agacharse", false);
+            }
+
             if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 if(salto.salto_)
                     animator.SetBool("moviendo", true);
+                if (animator.GetBool("agacharse"))
+                    CambiarAntonios();
                 if (!derecha)
                 {
                     derecha = true;
@@ -46,6 +62,8 @@ public class animacion : MonoBehaviour
             {
                 if(salto.salto_)
                     animator.SetBool("moviendo", true);
+                if (animator.GetBool("agacharse"))
+                    CambiarAntonios();
                 if (derecha)
                 {
                     derecha = false;
@@ -61,5 +79,10 @@ public class animacion : MonoBehaviour
             
         }
         
+    }
+    void CambiarAntonios()
+    {
+        antonioPerfil.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
