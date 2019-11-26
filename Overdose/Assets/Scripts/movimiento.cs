@@ -8,8 +8,6 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D rb2d;
     public float speed;
    
-    public float jumpForce;
-    bool isJumping;
 
     private void Start()
     {
