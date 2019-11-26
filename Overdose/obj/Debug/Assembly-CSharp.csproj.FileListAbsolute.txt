@@ -1,0 +1,2 @@
+C:\Users\usuario de prueba\Documents\GitHub\Overdose\Overdose\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\usuario de prueba\Documents\GitHub\Overdose\Overdose\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
