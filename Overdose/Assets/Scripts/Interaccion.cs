@@ -10,7 +10,7 @@ public class Interaccion : MonoBehaviour
     public Rect messageBox = new Rect(0.1f, 0.07f, 0.8f, 0.2f); //Tamaño y posición de la caja de dialogo
     public Transform player; //Antonio
     public float minDistance = 1f; //Distancia para activar la interacción
-    public float textSpeed = 2f;
+    //public float textSpeed = 2f;
 
     private bool inRange = false;
     private bool showText = false;
@@ -46,18 +46,11 @@ public class Interaccion : MonoBehaviour
         }
     }
 
-    IEnumerable OnGUI()
+    void OnGUI()
     {
         if (inRange && !showText)
         {
-            foreach(char letra in popUpBoxMessage.ToCharArray())
-            {
-                mensaje += letra;
-                GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), mensaje);
-                yield return new WaitForSeconds(textSpeed);
-            }
-            GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), mensaje);
-
+            GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage);
         }
 
         if (showText)
