@@ -114,7 +114,7 @@ public class cajas : MonoBehaviour
             }
             else //Frenar objeto en X al separarte de el
             {
-                obj.rigidbody.velocity = new Vector2(0f, obj.rigidbody.velocity.y);
+                //obj.rigidbody.velocity = new Vector2(0f, obj.rigidbody.velocity.y);
             }
         }
 
