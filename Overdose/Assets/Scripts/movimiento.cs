@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movimiento : MonoBehaviour
 {
     private Vector2 jump;
     private Rigidbody2D rb2d;
     public float speed;
+    public GameObject gameOver;
    
 
     private void Start()
@@ -40,6 +42,15 @@ public class movimiento : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("hola");
+        if (collision.CompareTag("Enemigo"))
+        {
+            gameOver.SetActive(true);
+            Invoke("RestartGame", 2);
+        }
+    }
+
+    private void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
