@@ -27,7 +27,7 @@ public class salto : MonoBehaviour
        // if (salto == true) Debug.Log("choca");
        // else Debug.Log(Physics2D.OverlapCircle(pos,100.0f,layer));
 
-        if (Input.GetKeyDown(KeyCode.Space)&& salto_) {
+        if (Input.GetKeyDown(KeyCode.Space)&& salto_ && transform.GetChild(0).gameObject.activeSelf) {
             rb2d.AddForce(height * Vector2.up, ForceMode2D.Impulse);
         }
         
