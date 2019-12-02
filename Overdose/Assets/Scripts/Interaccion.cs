@@ -4,13 +4,13 @@ using System.Collections.Generic;
 
 public class Interaccion : MonoBehaviour
 {
+    //diálogos
     public string npcTextMessage = "Soy un NPC"; //Dialogo
     public string popUpBoxMessage = "Presiona E"; //menasje de la caja de interacción
     public Rect popupBox = new Rect(0.25f, 0.75f, 0.5f, 0.1f); //Tamaño y posición de la caja que aparece para interactuar
     public Rect messageBox = new Rect(0.1f, 0.07f, 0.8f, 0.2f); //Tamaño y posición de la caja de dialogo
     public Transform player; //Antonio
     public float minDistance = 1f; //Distancia para activar la interacción
-    //public float textSpeed = 2f;
 
     private bool inRange = false;
     private bool showText = false;

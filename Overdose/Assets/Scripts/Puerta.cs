@@ -8,5 +8,5 @@ public class Puerta : MonoBehaviour
     public GameObject camera;
     public bool abierta;
     public Puerta puertaQueAbre;
-    public string objetoParaAbrirla;
+    public Objeto llave;
 }

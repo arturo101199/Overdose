@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class Inventario : MonoBehaviour
 {
-    public List<string> inventario;
-    
+    public List<Objeto> objetos;
+    public Transform huecos;
+    public Casillas[] casillas;
 
-    void OnTriggerStay2D(Collider2D collision)
+    private void Update()
     {
-        if (collision.CompareTag("Objeto"))
+        if (huecos != null)
+        { casillas = huecos.GetComponentsInChildren<Casillas>(); }
+
+        ActualizarInventario();
+    }
+
+    private void ActualizarInventario()
+    {
+        int i = 0;
+        for (; i < objetos.Count && i < casillas.Length; i++)
         {
-            if (Input.GetKeyDown("e"))
-            {
-                if (!Pausa.pausado)
-                {
-                    inventario.Add(collision.gameObject.GetComponent<Objeto>().objeto);
-                    Destroy(collision.gameObject);
-                }
-            }
+            casillas[i].Objeto = objetos[i];
         }
+        for (; i < casillas.Length; i++)
+        {
+            casillas[i].Objeto = null;
+        }
+
     }
 }

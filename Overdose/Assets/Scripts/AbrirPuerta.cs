@@ -13,7 +13,6 @@ public class AbrirPuerta : MonoBehaviour
     GameObject nuevaCamara;
     Puerta puertaQueAbre;
     Puerta puertaActual;
-    string objetoParaAbrirla;
 
     public Inventario inventario;
 
@@ -47,10 +46,10 @@ public class AbrirPuerta : MonoBehaviour
                 }
                 else if (enPuerta && !enTransicion && !puertaActual.abierta)
                 {
-                    if (inventario.inventario.Contains(puertaActual.objetoParaAbrirla))
+                    if (inventario.objetos.Contains(puertaActual.llave))
                     {
                         Abrir();
-                        inventario.inventario.Remove(puertaActual.objetoParaAbrirla);
+                        inventario.objetos.Remove(puertaActual.llave);
                         puertaActual.abierta = true;
                     }
                 }

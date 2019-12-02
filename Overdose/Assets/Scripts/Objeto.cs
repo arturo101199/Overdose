@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class Objeto : MonoBehaviour
 {
-    public string objeto;
-    
+    public string nombre;
+    public Sprite Icono;  
 }
