@@ -3644,6 +3644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salto: {fileID: 897508326}
   antonioPerfil: {fileID: 1086695632}
+  movimiento_: {fileID: 897508328}
 --- !u!1 &382383355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5637,7 +5638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638240621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4735928, y: -4.75, z: -10}
+  m_LocalPosition: {x: -3.4769344, y: -4.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1892321163}
@@ -8153,7 +8154,6 @@ GameObject:
   - component: {fileID: 897508328}
   - component: {fileID: 897508327}
   - component: {fileID: 897508326}
-  - component: {fileID: 897508325}
   - component: {fileID: 897508324}
   - component: {fileID: 897508323}
   - component: {fileID: 897508334}
@@ -8290,20 +8290,6 @@ MonoBehaviour:
   actualCamera: {fileID: 1892321160}
   transicion: {fileID: 1765882616}
   clip: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
---- !u!114 &897508325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 897508321}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8af2116b46a5344b94ab4350135db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  salto: {fileID: 897508326}
-  antonioPerfil: {fileID: 0}
 --- !u!114 &897508326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8349,6 +8335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   gameOver: {fileID: 653804502}
+  derecha: 1
 --- !u!61 &897508329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10363,6 +10350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   antonio3_4: {fileID: 364117036}
+  movimiento_: {fileID: 897508328}
 --- !u!1 &1089302330
 GameObject:
   m_ObjectHideFlags: 0
@@ -15981,6 +15969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   gameOver: {fileID: 0}
+  derecha: 1
 --- !u!50 &1728138792
 Rigidbody2D:
   serializedVersion: 4
@@ -17615,7 +17604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892321160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5264072, y: 1.25, z: 0}
+  m_LocalPosition: {x: -2.5230656, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1794438001}

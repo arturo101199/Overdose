@@ -9,6 +9,7 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D rb2d;
     public float speed;
     public GameObject gameOver;
+    public bool derecha = true;
    
 
     private void Start()

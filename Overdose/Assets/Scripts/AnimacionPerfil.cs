@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class AnimacionPerfil : MonoBehaviour
 {
-    bool derecha = true;
 
     public GameObject antonio3_4;
-    // Start is called before the first frame update
-    void Start()
+    Animator animator;
+    public movimiento movimiento_;
+
+    void Awake()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         if(Input.GetKeyUp("s"))
@@ -22,21 +23,45 @@ public class AnimacionPerfil : MonoBehaviour
         }
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
-            if (!derecha)
+            animator.SetBool("Gateando", true);
+            if (!movimiento_.derecha)
             {
-                derecha = true;
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                movimiento_.derecha = true;
             }
+                if(transform.localScale.x < 1)
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
 
         else if (Input.GetAxisRaw("Horizontal") == -1)
         {
-            if (derecha)
+            animator.SetBool("Gateando", true);
+            if (movimiento_.derecha)
             {
-                derecha = false;
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                movimiento_.derecha = false;
             }
+            if (transform.localScale.x > -1)
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
+        else
+        {
+            animator.SetBool("Gateando", false);
+        }
+    }
+    void OnEnable()
+    {
+        SetDirection();
+    }
+
+    void OnDisable()
+    {
+        if (transform.localScale.x < 1)
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+    }
+
+    void SetDirection()
+    {
+        if(!movimiento_.derecha)
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
     void CambiarAntonios()

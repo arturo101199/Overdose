@@ -5,11 +5,10 @@ using UnityEngine;
 public class animacion : MonoBehaviour
 {
     Animator animator;
-    bool derecha = true;
-    bool agachado = false;
 
     public salto salto;
     public GameObject antonioPerfil;
+    public movimiento movimiento_;
 
     void Awake()
     {
@@ -36,39 +35,33 @@ public class animacion : MonoBehaviour
 
             if (Input.GetKeyDown("s"))
             {
-                if (salto.salto_)
-                    animator.SetBool("agacharse", true);
+                if(salto.salto_)
+                    CambiarAntonios();
             }
-            if (Input.GetKeyUp("s"))
-            {
-                if (salto.salto_)
-                    animator.SetBool("agacharse", false);
-            }
+
 
             if (Input.GetAxisRaw("Horizontal") == 1)
             {
                 if(salto.salto_)
                     animator.SetBool("moviendo", true);
-                if (animator.GetBool("agacharse"))
-                    CambiarAntonios();
-                if (!derecha)
+                if (!movimiento_.derecha)
                 {
-                    derecha = true;
-                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                    movimiento_.derecha = true;
                 }
+                if(transform.localScale.x < 1)
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
             }
 
             else if (Input.GetAxisRaw("Horizontal") == -1)
             {
                 if(salto.salto_)
                     animator.SetBool("moviendo", true);
-                if (animator.GetBool("agacharse"))
-                    CambiarAntonios();
-                if (derecha)
+                if (movimiento_.derecha)
                 {
-                    derecha = false;
-                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+                    movimiento_.derecha = false;
                 }
+                if(transform.localScale.x > -1)
+                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
             }
 
             else
@@ -79,6 +72,22 @@ public class animacion : MonoBehaviour
             
         }
         
+    }
+    void OnEnable()
+    {
+        SetDirection();
+    }
+
+    void OnDisable()
+    {
+        if (transform.localScale.x < 1)
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+    }
+
+    void SetDirection()
+    {
+        if (!movimiento_.derecha)
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
     void CambiarAntonios()
     {
