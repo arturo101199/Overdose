@@ -9,12 +9,18 @@ public class movimiento : MonoBehaviour
     private Rigidbody2D rb2d;
     public float speed;
     public GameObject gameOver;
+    public GameObject Antonio3_4;
+    public GameObject AntonioPerfil;
     public bool derecha = true;
+    float halfSpeed;
+
+    public static bool conducto = false;
    
 
     private void Start()
     {
-        rb2d = GetComponent<Rigidbody2D> ();
+        rb2d = GetComponent<Rigidbody2D>();
+        halfSpeed = speed / 2;
         
     }
 
@@ -35,10 +41,12 @@ public class movimiento : MonoBehaviour
 
     void Agacharse()
     {
-        if (Input.GetKeyDown("s"))
-            speed = speed / 2;
+        if (Input.GetKey("s") || conducto)
+        {
+            speed = halfSpeed;
+        }
         if (Input.GetKeyUp("s"))
-            speed = speed * 2;
+            speed = halfSpeed * 2;
     } 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -47,6 +55,21 @@ public class movimiento : MonoBehaviour
         {
             gameOver.SetActive(true);
             Invoke("RestartGame", 2);
+        }
+        if (collision.CompareTag("conducto"))
+        {
+            conducto = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("conducto"))
+        {
+            conducto = false;
+            speed = halfSpeed * 2;
+            AntonioPerfil.SetActive(false);
+            Antonio3_4.SetActive(true);
         }
     }
 

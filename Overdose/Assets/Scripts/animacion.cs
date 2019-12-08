@@ -33,7 +33,7 @@ public class animacion : MonoBehaviour
                 animator.SetBool("saltando", false);
             }
 
-            if (Input.GetKeyDown("s"))
+            if (Input.GetKeyDown("s") || movimiento.conducto)
             {
                 if(salto.salto_)
                     CambiarAntonios();

@@ -8,6 +8,7 @@ TagManager:
   - Objeto
   - caja
   - Enemigo
+  - conducto
   layers:
   - Default
   - TransparentFX

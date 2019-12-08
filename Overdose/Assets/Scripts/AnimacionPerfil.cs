@@ -19,7 +19,8 @@ public class AnimacionPerfil : MonoBehaviour
     {
         if(Input.GetKeyUp("s"))
         {
-            CambiarAntonios();
+            if(!movimiento.conducto)
+                CambiarAntonios();
         }
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
