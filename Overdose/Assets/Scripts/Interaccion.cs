@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class Interaccion : MonoBehaviour
 {
     //diálogos
-    public string npcTextMessage = "Soy un/n NPC"; //Dialogo
+    public string npcTextMessage = "Soy un NPC"; //Dialogo
     public string popUpBoxMessage = "Presiona E"; //menasje de la caja de interacción
     public Rect popupBox = new Rect(0.25f, 0.75f, 0.5f, 0.1f); //Tamaño y posición de la caja que aparece para interactuar
     public Rect messageBox = new Rect(0.1f, 0.09f, 0.8f, 0.2f); //Tamaño y posición de la caja de dialogo
@@ -15,10 +15,14 @@ public class Interaccion : MonoBehaviour
 
     private bool inRange = false;
     private bool showText = false;
-    private string mensaje;
+
+    GUIStyle style;
 
     void Start()
     {
+        style = new GUIStyle("button");
+        //Posición del texto
+        style.alignment = TextAnchor.MiddleCenter;
         //mensaje de error si Antonio no está asignado como player en el inspector
         if (player == null)
         {
@@ -52,12 +56,12 @@ public class Interaccion : MonoBehaviour
         if (inRange && !showText)
         {
            
-            GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage);
+            GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage, style);
         }
 
         if (showText)
         {
-            GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage);
+            GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage, style);
         }
     }
 }
