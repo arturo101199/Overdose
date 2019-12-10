@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,13 +17,21 @@ public class Interaccion : MonoBehaviour
     private bool inRange = false;
     private bool showText = false;
 
+    public bool terminal;
+    public AudioClip hackear;
+    private AudioSource source;
+    public float tiempo = 1f;
+
     GUIStyle style;
 
     void Start()
     {
+
+        source = GetComponent<AudioSource>();
+
         style = new GUIStyle("button");
-        //Posición del texto
         style.alignment = TextAnchor.MiddleCenter;
+
         //mensaje de error si Antonio no está asignado como player en el inspector
         if (player == null)
         {
@@ -33,21 +42,28 @@ public class Interaccion : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= minDistance) //Se comprueba la distancia
+        if (Math.Abs(transform.position.x - player.position.x) <= minDistance) //Se comprueba la distancia
         {
             //Activar el mensaje de la caja de interacción
             inRange = true;
 
             if (Input.GetKeyDown("e"))
             {
+                if (terminal & !showText)
+                {
+                    source.Stop();
+                    source.PlayOneShot(hackear);
+                }
                 showText = !showText;
             }
         }
         else
         {
             //Los textos desaparecen si Antonio se aleja
+            if (terminal) source.Stop();
             inRange = false;
             showText = false;
+            
         }
     }
 

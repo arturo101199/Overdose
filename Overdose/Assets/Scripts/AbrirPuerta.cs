@@ -19,7 +19,8 @@ public class AbrirPuerta : MonoBehaviour
     public GameObject actualCamera;
     public GameObject transicion;
 
-    public AudioClip clip;
+    public AudioClip abrir;
+    public AudioClip cerrada;
 
     private AudioSource source;
     // Start is called before the first frame update
@@ -52,7 +53,13 @@ public class AbrirPuerta : MonoBehaviour
                         inventario.objetos.Remove(puertaActual.llave);
                         puertaActual.abierta = true;
                     }
+                    else
+                    {
+                        source.PlayOneShot(cerrada);
+
+                    }
                 }
+                
             }
 
         }
@@ -68,7 +75,7 @@ public class AbrirPuerta : MonoBehaviour
         {
             puertaActual.puertaQueAbre.abierta = true;
         }
-        source.PlayOneShot(clip);
+        source.PlayOneShot(abrir);
         Invoke("DesactivarTransicion", 2);
     }
 
