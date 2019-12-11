@@ -9,4 +9,6 @@ public class Puerta : MonoBehaviour
     public bool abierta;
     public Puerta puertaQueAbre;
     public Objeto llave;
+    public AudioClip sonidoAbrir;
+    public AudioClip sonidoCerrado;
 }

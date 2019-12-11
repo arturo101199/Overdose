@@ -20,7 +20,9 @@ public class Interaccion : MonoBehaviour
     public bool terminal;
     public AudioClip hackear;
     private AudioSource source;
-    public float tiempo = 1f;
+    public Puerta puerta_Hackeable;
+
+    public bool puerta;
 
     GUIStyle style;
 
@@ -42,7 +44,8 @@ public class Interaccion : MonoBehaviour
 
     void Update()
     {
-        if (Math.Abs(transform.position.x - player.position.x) <= minDistance) //Se comprueba la distancia
+        if (Math.Abs(transform.position.x - player.position.x) <= minDistance
+            && Math.Abs(transform.position.y - player.position.y) <= 10) //Se comprueba la distancia
         {
             //Activar el mensaje de la caja de interacción
             inRange = true;
@@ -53,6 +56,7 @@ public class Interaccion : MonoBehaviour
                 {
                     source.Stop();
                     source.PlayOneShot(hackear);
+                    puerta_Hackeable.abierta = true;
                 }
                 showText = !showText;
             }
@@ -71,13 +75,12 @@ public class Interaccion : MonoBehaviour
     {
         if (inRange && !showText)
         {
-           
-            GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage, style);
+           if (!puerta) GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage, style);
         }
 
         if (showText)
         {
-            GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage, style);
+            if (!puerta || (puerta && !transform.gameObject.GetComponent<Puerta>().abierta)) GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage, style);
         }
     }
 }
