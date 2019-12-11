@@ -7,6 +7,6 @@ public class Menú : MonoBehaviour
 {
     public void NextScene()
     {
-        SceneManager.LoadScene("scenesOverdose");
+        SceneManager.LoadScene("Instrucciones");
     }
 }

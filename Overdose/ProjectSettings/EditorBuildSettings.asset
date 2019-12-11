@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Escenas/MenuPrincipal.unity
+    guid: 2a95fdc015e64f14bb2ad2c6b0acd78f
+  - enabled: 1
+    path: Assets/Escenas/Instrucciones.unity
+    guid: 53500d7449393e241a579e02ffd03549
+  - enabled: 1
     path: Assets/Escenas/scenesOverdose.unity
     guid: c688fcae2abf1ca47b000290b4cbff52
   m_configObjects: {}
