@@ -5128,6 +5128,7 @@ GameObject:
   - component: {fileID: 448969524}
   - component: {fileID: 448969526}
   - component: {fileID: 448969525}
+  - component: {fileID: 448969527}
   m_Layer: 0
   m_Name: Trampilla1 - Conducto
   m_TagString: Puerta
@@ -5244,6 +5245,38 @@ MonoBehaviour:
   llave: {fileID: 0}
   sonidoAbrir: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
   sonidoCerrado: {fileID: 8300000, guid: 539fa9be4b7685445bcf89d075a79648, type: 3}
+--- !u!114 &448969527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448969522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: 
+  popUpBoxMessage: Pulsa E para pasar por la trampilla
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 2
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 0
 --- !u!1 &452064826
 GameObject:
   m_ObjectHideFlags: 0
@@ -5928,6 +5961,7 @@ GameObject:
   - component: {fileID: 530284074}
   - component: {fileID: 530284076}
   - component: {fileID: 530284075}
+  - component: {fileID: 530284077}
   m_Layer: 0
   m_Name: Conducto - Limpieza
   m_TagString: Puerta
@@ -5995,6 +6029,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.10565, y: 5.9035387}
   m_EdgeRadius: 0
+--- !u!114 &530284077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530284073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: 
+  popUpBoxMessage: Pulsa E para pasar por la trampilla
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 1
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 0
 --- !u!1 &530328448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6702,6 +6768,7 @@ GameObject:
   - component: {fileID: 619513536}
   - component: {fileID: 619513538}
   - component: {fileID: 619513537}
+  - component: {fileID: 619513539}
   m_Layer: 0
   m_Name: Pasillo - Ascensor0
   m_TagString: Puerta
@@ -6738,7 +6805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destino: {fileID: 1394413812}
   camera: {fileID: 2062172310}
-  abierta: 1
+  abierta: 0
   puertaQueAbre: {fileID: 0}
   llave: {fileID: 0}
   sonidoAbrir: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
@@ -6769,6 +6836,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.10565, y: 5.9035387}
   m_EdgeRadius: 0
+--- !u!114 &619513539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619513535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: Cerrada
+  popUpBoxMessage: Presiona E
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 1
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 1
 --- !u!1 &638240621
 GameObject:
   m_ObjectHideFlags: 0
@@ -13369,6 +13468,7 @@ GameObject:
   - component: {fileID: 1124634389}
   - component: {fileID: 1124634391}
   - component: {fileID: 1124634390}
+  - component: {fileID: 1124634392}
   m_Layer: 0
   m_Name: Conducto - Trampilla
   m_TagString: Puerta
@@ -13423,7 +13523,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14515066, y: -1.1868968}
+  m_Offset: {x: -1.81, y: -1.1868968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13436,6 +13536,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.10565, y: 5.9035387}
   m_EdgeRadius: 0
+--- !u!114 &1124634392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124634388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: 
+  popUpBoxMessage: Pulsa E para pasar por la trampilla
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 1
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 0
 --- !u!1 &1132896077
 GameObject:
   m_ObjectHideFlags: 0
@@ -16876,6 +17008,7 @@ GameObject:
   - component: {fileID: 1449740934}
   - component: {fileID: 1449740936}
   - component: {fileID: 1449740935}
+  - component: {fileID: 1449740937}
   m_Layer: 0
   m_Name: Conducto - Ascensor0
   m_TagString: Puerta
@@ -16930,7 +17063,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14515066, y: -1.1868968}
+  m_Offset: {x: 1.71, y: -1.1868968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16943,6 +17076,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.10565, y: 5.9035387}
   m_EdgeRadius: 0
+--- !u!114 &1449740937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449740933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: 
+  popUpBoxMessage: Pulsa E para pasar por la trampilla
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 1
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 0
 --- !u!1 &1463268039
 GameObject:
   m_ObjectHideFlags: 0
@@ -17055,6 +17220,7 @@ GameObject:
   - component: {fileID: 1470546208}
   - component: {fileID: 1470546210}
   - component: {fileID: 1470546209}
+  - component: {fileID: 1470546211}
   m_Layer: 0
   m_Name: Salida
   m_TagString: Puerta
@@ -17122,6 +17288,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.10565, y: 5.9035387}
   m_EdgeRadius: 0
+--- !u!114 &1470546211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470546207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: No puedo irme sin el compuesto
+  popUpBoxMessage: Presiona E
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 1
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 1
 --- !u!1 &1478512446
 GameObject:
   m_ObjectHideFlags: 0
@@ -21071,6 +21269,7 @@ GameObject:
   - component: {fileID: 1801501223}
   - component: {fileID: 1801501224}
   - component: {fileID: 1801501225}
+  - component: {fileID: 1801501226}
   m_Layer: 0
   m_Name: Trampilla0 - Conducto
   m_TagString: Puerta
@@ -21187,6 +21386,38 @@ MonoBehaviour:
   llave: {fileID: 0}
   sonidoAbrir: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
   sonidoCerrado: {fileID: 8300000, guid: 539fa9be4b7685445bcf89d075a79648, type: 3}
+--- !u!114 &1801501226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801501221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcTextMessage: 
+  popUpBoxMessage: Pulsa E para pasar por la trampilla
+  popupBox:
+    serializedVersion: 2
+    x: 0.25
+    y: 0.75
+    width: 0.5
+    height: 0.1
+  messageBox:
+    serializedVersion: 2
+    x: 0.1
+    y: 0.09
+    width: 0.8
+    height: 0.2
+  player: {fileID: 897508333}
+  minDistance: 2
+  terminal: 0
+  hackear: {fileID: 0}
+  puerta_Hackeable: {fileID: 0}
+  puerta: 0
 --- !u!1 &1813062855
 GameObject:
   m_ObjectHideFlags: 0

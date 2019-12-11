@@ -78,7 +78,7 @@ public class Interaccion : MonoBehaviour
            if (!puerta) GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage, style);
         }
 
-        if (showText)
+        if (showText && npcTextMessage != "")
         {
             if (!puerta || (puerta && !transform.gameObject.GetComponent<Puerta>().abierta)) GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage, style);
         }
