@@ -9,6 +9,7 @@ TagManager:
   - caja
   - Enemigo
   - conducto
+  - escondido
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class movimiento : MonoBehaviour
     public bool derecha = true;
     float halfSpeed;
 
+    public Escondite Escondite;
     public static bool conducto = false;
    
 
@@ -46,16 +47,20 @@ public class movimiento : MonoBehaviour
             speed = halfSpeed;
         }
         if (Input.GetKeyUp("s"))
+        {
             speed = halfSpeed * 2;
+        }
     } 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemigo"))
+        if (collision.CompareTag("Enemigo") && !Escondite.escondido)
+            
         {
             gameOver.SetActive(true);
             Invoke("RestartGame", 2);
         }
+
         if (collision.CompareTag("conducto"))
         {
             conducto = true;
