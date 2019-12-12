@@ -112,8 +112,8 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 711, y: 494}
-  m_MaxSize: {x: 18006, y: 14044}
+  m_MinSize: {x: 713, y: 494}
+  m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
   controlID: 138
 --- !u!114 &6
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 34
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   - {fileID: 15}
   - {fileID: 16}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,8 +244,8 @@ MonoBehaviour:
     y: 0
     width: 551
     height: 947
-  m_MinSize: {x: 275, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 122}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -368,9 +368,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 57.827595, y: 29.871737, z: -76.109375}
+    m_Target: {x: -2.6822882, y: 12.563492, z: -84.54396}
     speed: 2
-    m_Value: {x: 57.827595, y: 29.871737, z: -76.109375}
+    m_Value: {x: -2.6822882, y: 12.563492, z: -84.54396}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -403,9 +403,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 122.166405
+    m_Target: 90.79954
     speed: 2
-    m_Value: 127.922935
+    m_Value: 90.79954
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -598,14 +598,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.5231579
+    - e00: 0.54669875
       e01: 0
       e02: 0
-      e03: -11.157898
+      e03: -9.790344
       e10: 0
-      e11: 0.5231579
+      e11: 0.54669875
       e12: 0
-      e13: 67.56579
+      e13: 64.41754
       e20: 0
       e21: 0
       e22: 1
@@ -615,10 +615,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: d551f3fffc96f984bb59462ecb3ea97f,
+  m_AnimatorController: {fileID: 9100000, guid: 59146455413cab945bdbdeebadd88876,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -41527160862929924, guid: d551f3fffc96f984bb59462ecb3ea97f,
+  - m_Target: {fileID: -7083236667156174432, guid: 59146455413cab945bdbdeebadd88876,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -697,20 +697,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Escenas
+    - Assets/Antonio/Animaciones
   m_ViewMode: 1
   m_StartGridSize: 52
   m_LastFolders:
-  - Assets/Escenas
+  - Assets/Antonio/Animaciones
   m_LastFoldersGridSize: 52
   m_LastProjectPath: C:\Users\Arturo\Desktop\Github\Overdose\Overdose
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe390000
-    m_LastClickedID: 14846
-    m_ExpandedIDs: 000000000a320000c8370000d0380000a0390000da46000000ca9a3b
+    m_SelectedIDs: c6370000
+    m_LastClickedID: 14278
+    m_ExpandedIDs: 00000000fe310000c2370000ca380000143a0000d446000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -738,7 +738,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a320000c8370000d0380000da460000
+    m_ExpandedIDs: 00000000fe310000c2370000ca380000d4460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -854,7 +854,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2ee5ffff88eaffff92edffff5efbffffbc420000224300007a720000dc7e0000a28100005684000048860000
+      m_ExpandedIDs: 66fbffff0e400000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 

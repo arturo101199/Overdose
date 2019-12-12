@@ -12,6 +12,11 @@ public class cajas : MonoBehaviour
     private Rigidbody2D rb2d;
     public float pushSpeed;
 
+    public GameObject antonio3_4;
+    public GameObject antonioPerfil;
+
+    public Animator animator;
+
     private void Start()
     {
         trig = false;
@@ -19,7 +24,7 @@ public class cajas : MonoBehaviour
         rb2d = transform.GetComponent<Rigidbody2D>();
         boxCollider2d = transform.GetComponent<BoxCollider2D>();
     }
-    
+
 
     void chooseSide(Collision2D p)
     {
@@ -64,6 +69,9 @@ public class cajas : MonoBehaviour
             pull = false;
             obj.attachedRigidbody.velocity = new Vector2(0f, obj.attachedRigidbody.velocity.y);
             trig = false;
+            antonio3_4.SetActive(true);
+            antonioPerfil.SetActive(false);
+            obj.attachedRigidbody.mass = 10000;
 
         }
     }
@@ -87,6 +95,7 @@ public class cajas : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E) && !empujaIdle)
                 {
                     empujaIdle = true;
+                    obj.rigidbody.mass = 22;
                 }
                 else if (Input.GetKeyDown(KeyCode.E) && empujaIdle)
                 {
@@ -97,20 +106,44 @@ public class cajas : MonoBehaviour
                 if (Input.GetKey(KeyCode.D) && empujaIdle)
                 {
                     empujaMov = true;
-
+                    antonio3_4.SetActive(false);
+                    antonioPerfil.SetActive(true);
+                    if (push)
+                    {
+                        animator.SetBool("Empujando", true);
+                        animator.SetBool("Arrastrando", false);
+                    }
+                    else if (pull)
+                    {
+                        animator.SetBool("Arrastrando", true);
+                        animator.SetBool("Empujando", false);
+                    }
                     obj.rigidbody.velocity = new Vector2(pushSpeed, obj.rigidbody.velocity.y);
-                   
+
                 }
                 //Tirar//
                 else if (Input.GetKey(KeyCode.A) && empujaIdle)
                 {
                     empujaMov = true;
-
+                    antonio3_4.SetActive(false);
+                    antonioPerfil.SetActive(true);
+                    if (push)
+                    {
+                        animator.SetBool("Empujando", true);
+                        animator.SetBool("Arrastrando", false);
+                    }
+                    else if (pull)
+                    {
+                        animator.SetBool("Arrastrando", true);
+                        animator.SetBool("Empujando", false);
+                    }
                     obj.rigidbody.velocity = new Vector2(-pushSpeed, obj.rigidbody.velocity.y);
-                    //push = true;
                 }
                 //Ninguna de las dos
-                else { obj.rigidbody.velocity = new Vector2(0f, obj.rigidbody.velocity.y); empujaMov = false; }
+                else
+                {
+                    obj.rigidbody.velocity = new Vector2(0f, obj.rigidbody.velocity.y); empujaMov = false;
+                }
             }
             else //Frenar objeto en X al separarte de el
             {

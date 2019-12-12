@@ -4346,6 +4346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trig: 0
   pushSpeed: 10
+  antonio3_4: {fileID: 0}
+  antonioPerfil: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!50 &364117038
 Rigidbody2D:
   serializedVersion: 4
@@ -11361,6 +11364,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trig: 0
   pushSpeed: 10
+  antonio3_4: {fileID: 364117036}
+  antonioPerfil: {fileID: 1086695632}
+  animator: {fileID: 1086695634}
 --- !u!1 &902858933
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,9 +17,9 @@ public class AnimacionPerfil : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyUp("s"))
+        if (Input.GetKeyUp("s"))
         {
-            if(!movimiento.conducto)
+            if (!movimiento.conducto)
                 CambiarAntonios();
         }
         if (Input.GetAxisRaw("Horizontal") == 1)
@@ -29,8 +29,12 @@ public class AnimacionPerfil : MonoBehaviour
             {
                 movimiento_.derecha = true;
             }
-                if(transform.localScale.x < 1)
-                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            if (transform.localScale.x < 1 && !animator.GetBool("Arrastrando"))
+                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            if(animator.GetBool("Arrastrando") && transform.localScale.x > -1)
+            {
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
         }
 
         else if (Input.GetAxisRaw("Horizontal") == -1)
@@ -40,8 +44,12 @@ public class AnimacionPerfil : MonoBehaviour
             {
                 movimiento_.derecha = false;
             }
-            if (transform.localScale.x > -1)
+            if (transform.localScale.x > -1 && !animator.GetBool("Arrastrando"))
                 transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+            if (animator.GetBool("Arrastrando") && transform.localScale.x < 1)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            }
         }
         else
         {
@@ -61,7 +69,7 @@ public class AnimacionPerfil : MonoBehaviour
 
     void SetDirection()
     {
-        if(!movimiento_.derecha)
+        if (!movimiento_.derecha)
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
