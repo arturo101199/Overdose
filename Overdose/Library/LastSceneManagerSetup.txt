@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Escenas/scenesOverdose.unity
+- path: Assets/Escenas/Instrucciones.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

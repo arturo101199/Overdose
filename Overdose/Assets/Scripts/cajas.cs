@@ -92,12 +92,12 @@ public class cajas : MonoBehaviour
             if (obj.collider.CompareTag("caja"))
             {
                 chooseSide(obj);    //Desde donde estas interactuando con el objeto
-                if (Input.GetKeyDown(KeyCode.E) && !empujaIdle)
+                if (Input.GetKeyDown(KeyCode.F) && !empujaIdle)
                 {
                     empujaIdle = true;
                     obj.rigidbody.mass = 22;
                 }
-                else if (Input.GetKeyDown(KeyCode.E) && empujaIdle)
+                else if (Input.GetKeyDown(KeyCode.F) && empujaIdle)
                 {
                     empujaIdle = false;
                 }
