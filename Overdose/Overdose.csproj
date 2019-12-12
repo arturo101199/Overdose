@@ -735,6 +735,8 @@
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\MisionAudio.cs" />
+    <Compile Include="Assets\musicaloc.cs" />
     <Compile Include="Assets\Scripts\AbrirPuerta.cs" />
     <Compile Include="Assets\Scripts\animacion.cs" />
     <Compile Include="Assets\Scripts\AnimacionPerfil.cs" />
@@ -756,6 +758,7 @@
     <Compile Include="Assets\Scripts\pillado.cs" />
     <Compile Include="Assets\Scripts\Puerta.cs" />
     <Compile Include="Assets\Scripts\salto.cs" />
+    <Compile Include="Assets\sonidoMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
