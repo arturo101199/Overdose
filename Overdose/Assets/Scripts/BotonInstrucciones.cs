@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class BotonInstrucciones : MonoBehaviour
 {
     public bool musica=true;
+    public string escena;
 
     public void CambiarEscena()
     {
         musica = !musica;
-        SceneManager.LoadScene("scenesOverdose");
+        SceneManager.LoadScene(escena);
     }
 }

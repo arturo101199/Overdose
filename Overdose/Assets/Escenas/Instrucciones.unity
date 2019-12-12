@@ -502,6 +502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fad110c80ddb24a86412c6e13a71a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musica: 1
+  escena: Mision
 --- !u!1 &2049796554
 GameObject:
   m_ObjectHideFlags: 0
