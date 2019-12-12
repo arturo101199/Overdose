@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/scenesOverdose.unity
     guid: c688fcae2abf1ca47b000290b4cbff52
+  - enabled: 1
+    path: Assets/Escenas/ToBeContinued.unity
+    guid: c4d05e5159623844c829208f341899b3
   m_configObjects: {}

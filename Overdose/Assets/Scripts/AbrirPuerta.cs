@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Cinemachine;
 
 public class AbrirPuerta : MonoBehaviour
@@ -46,9 +47,14 @@ public class AbrirPuerta : MonoBehaviour
                 {
                     if (inventario.objetos.Contains(puertaActual.llave))
                     {
-                        Abrir();
-                        inventario.objetos.Remove(puertaActual.llave);
-                        puertaActual.abierta = true;
+                        if (puertaActual.llave.Nombre == "Compuesto")
+                            SceneManager.LoadScene("ToBeContinued");
+                        else
+                        {
+                            Abrir();
+                            inventario.objetos.Remove(puertaActual.llave);
+                            puertaActual.abierta = true;
+                        }
                     }
                     else
                     {
