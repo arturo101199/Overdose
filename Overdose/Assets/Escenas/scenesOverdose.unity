@@ -442,12 +442,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45769086}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187.3, y: 44.68, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 190.56967, y: 49.57558, z: 333.48828}
   m_LocalScale: {x: 0.26907, y: 0.26907, z: 0.26907}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 475171044}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &74806960
 GameObject:
@@ -5849,6 +5849,8 @@ Transform:
   - {fileID: 1215514137}
   - {fileID: 871479186}
   - {fileID: 546971376}
+  - {fileID: 45769088}
+  - {fileID: 724104823}
   m_Father: {fileID: 949109256}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7513,7 +7515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638240621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4718857, y: -4.75, z: -10}
+  m_LocalPosition: {x: -3.4845657, y: -4.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1892321163}
@@ -8787,12 +8789,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724104821}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 79.33, y: -3.72, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 82.59966, y: 1.1755803, z: 333.48828}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 475171044}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &726280562
 GameObject:
@@ -9127,7 +9129,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11093,7 +11095,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 73b0f034ca0ecdf4b83391fc08b10e43, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21238,8 +21240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e34f058e1f2814e9496be4d4672208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcTextMessage: "Me perece incre\xEDble que los limpiadores y los de seguridad tengan
-    llave para usar el ascensor y a los cient\xEDficos no nos dejen usarlo"
+  npcTextMessage: "Es incre\xEDble que los limpiadores y los guardias tengan llave
+    para el ascensor y a nosotros no nos dejen"
   popUpBoxMessage: "Presiona E para hablar con el cient\xEDfico"
   popupBox:
     serializedVersion: 2
@@ -23084,7 +23086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892321160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.128115, y: 0.9499998, z: 0}
+  m_LocalPosition: {x: -8.115435, y: 0.9499998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1794438001}

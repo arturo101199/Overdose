@@ -24,15 +24,14 @@ public class Interaccion : MonoBehaviour
 
     public bool puerta;
 
-    GUIStyle style;
-
     void Start()
     {
 
         source = GetComponent<AudioSource>();
 
-        style = new GUIStyle("button");
+        /*style = new GUIStyle();
         style.alignment = TextAnchor.MiddleCenter;
+        style.fontSize = 18;*/
 
         //mensaje de error si Antonio no está asignado como player en el inspector
         if (player == null)
@@ -57,6 +56,8 @@ public class Interaccion : MonoBehaviour
                     source.Stop();
                     source.PlayOneShot(hackear);
                     puerta_Hackeable.abierta = true;
+                    terminal = false;
+                    popUpBoxMessage = "";
                 }
                 showText = !showText;
             }
@@ -73,14 +74,17 @@ public class Interaccion : MonoBehaviour
 
     void OnGUI()
     {
-        if (inRange && !showText)
+        GUI.skin.box.fontSize = 18;
+        GUI.skin.box.alignment = TextAnchor.MiddleCenter;
+
+        if (inRange && !showText && popUpBoxMessage != "")
         {
-           if (!puerta) GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage, style);
+            if (!puerta) GUI.Box(new Rect(Screen.width * popupBox.x, Screen.height * popupBox.y, Screen.width * popupBox.width, Screen.height * popupBox.height), popUpBoxMessage);
         }
 
         if (showText && npcTextMessage != "")
         {
-            if (!puerta || (puerta && !transform.gameObject.GetComponent<Puerta>().abierta)) GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage, style);
+            if (!puerta || (puerta && !transform.gameObject.GetComponent<Puerta>().abierta)) GUI.Box(new Rect(Screen.width * messageBox.x, Screen.height * messageBox.y, Screen.width * messageBox.width, Screen.height * messageBox.height), npcTextMessage);
         }
     }
 }
