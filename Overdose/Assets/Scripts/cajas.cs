@@ -100,6 +100,9 @@ public class cajas : MonoBehaviour
                 else if (Input.GetKeyDown(KeyCode.F) && empujaIdle)
                 {
                     empujaIdle = false;
+                    antonio3_4.SetActive(true);
+                    antonioPerfil.SetActive(false);
+                    obj.rigidbody.mass = 10000;
                 }
 
                 //Empujar//
