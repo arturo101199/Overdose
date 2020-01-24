@@ -5,10 +5,11 @@ using UnityEngine;
 public class Escondite : MonoBehaviour
 {
     public bool escondido;
+    public GameObject antonioPerfil;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("escondido")) { escondido = true; }
+        if (collision.CompareTag("escondido") && antonioPerfil.activeSelf) { escondido = true; }
 
     }
 
