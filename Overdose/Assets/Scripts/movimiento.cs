@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class movimiento : MonoBehaviour
@@ -8,9 +9,12 @@ public class movimiento : MonoBehaviour
     private Vector2 jump;
     private Rigidbody2D rb2d;
     public float speed;
+    public float tiempoPillar;
+    float timer = 0f;
     public GameObject gameOver;
     public GameObject Antonio3_4;
     public GameObject AntonioPerfil;
+    public Image canvasImage;
     public bool derecha = true;
     float halfSpeed;
 
@@ -66,8 +70,19 @@ public class movimiento : MonoBehaviour
         if (collision.CompareTag("Enemigo") && !Escondite.escondido)
 
         {
-            gameOver.SetActive(true);
-            Invoke("RestartGame", 2);
+            timer += Time.deltaTime;
+            canvasImage.color = new Color(canvasImage.color.r, canvasImage.color.g, canvasImage.color.b, canvasImage.color.a + 0.03f);
+            if(timer >= tiempoPillar)
+            {
+                gameOver.SetActive(true);
+                Invoke("RestartGame", 2);
+            }
+        }
+
+        else if (collision.CompareTag("Enemigo") && Escondite.escondido)
+        {
+            timer = 0f;
+            canvasImage.color = new Color(canvasImage.color.r, canvasImage.color.g, canvasImage.color.b, 0);
         }
     }
 
@@ -79,6 +94,11 @@ public class movimiento : MonoBehaviour
             speed = halfSpeed * 2;
             AntonioPerfil.SetActive(false);
             Antonio3_4.SetActive(true);
+        }
+        if (collision.CompareTag("Enemigo") && !Escondite.escondido)
+        {
+            timer = 0f;
+            canvasImage.color = new Color(canvasImage.color.r, canvasImage.color.g, canvasImage.color.b, 0);
         }
     }
 

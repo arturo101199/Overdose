@@ -10,6 +10,8 @@ public class Escondite : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("escondido") && antonioPerfil.activeSelf) { escondido = true; }
+        else if(collision.CompareTag("escondido") && !antonioPerfil.activeSelf)
+            escondido = false;
 
     }
 
