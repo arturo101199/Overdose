@@ -10,6 +10,8 @@ TagManager:
   - Enemigo
   - conducto
   - escondido
+  - terminal
+  - interaccion
   layers:
   - Default
   - TransparentFX

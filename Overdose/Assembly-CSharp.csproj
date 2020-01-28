@@ -101,12 +101,12 @@
     <Compile Include="Assets\Scripts\BotonInstrucciones.cs" />
     <Compile Include="Assets\Scripts\cajas.cs" />
     <Compile Include="Assets\Scripts\camara.cs" />
-    <Compile Include="Assets\Scripts\CambiarSpriteBoton.cs" />
     <Compile Include="Assets\Scripts\Casillas.cs" />
     <Compile Include="Assets\Scripts\CogerObjeto.cs" />
     <Compile Include="Assets\Scripts\enemypatrol.cs" />
     <Compile Include="Assets\Scripts\Escondite.cs" />
     <Compile Include="Assets\Scripts\Interaccion.cs" />
+    <Compile Include="Assets\Scripts\Interacciones.cs" />
     <Compile Include="Assets\Scripts\Inventario.cs" />
     <Compile Include="Assets\Scripts\Menú.cs" />
     <Compile Include="Assets\Scripts\movement_pattern1.cs" />
